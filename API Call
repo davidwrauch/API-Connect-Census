@@ -1,0 +1,3 @@
+import requests
+response = requests.get("https://api.census.gov/data/2016/acs/acs5?get=NAME,B17001_002E,B17001_002M&for=state:01") #pull Alamaba state data for number of people in poverty and margin of error#
+print(response.json())
